@@ -1,7 +1,55 @@
 .App {
   text-align: center;
 }
+.appsStores{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.presentation-box{
+  display: flex;
+  margin-top:-19px;
+  margin-right:20px;
+}
+.copyright{
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 2px;
+  margin-top: -10px;
+}
+.store {
+  margin: 4px;
+}
+a{
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 2px;
+}
+.footer-links1{
+  height:3rem;
+  width:50rem;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.footer-links2{
+  margin-top: -20px;
+  height:3rem;
+  width:35rem;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.footer{
+  margin-top:40px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -61,8 +109,8 @@ a {
 }
 
 .box {
-  max-width: 350px;
-  width: 100%;
+  width: 350px;
+  height: 360px ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,13 +118,25 @@ a {
   background-color: #ffff;
   border: 1px solid #e6e6e6;
   border-radius: 1px;
-  margin: 0 0 10px;
+  margin: 32px 0 10px;
   padding: 10px 0;
   flex-grow: 1;
 }
 
+.box2{
+  background-color: #ffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 10px 0 10px;
+  padding: 10px 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading {
-  margin: 22px auto 12px;
+  margin: 25px  40px auto 12px;
   background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
   background-position: -98px 0;
   height: 51px;
@@ -85,9 +145,9 @@ a {
 }
 
 .field {
-  margin: 10px 0;
+  margin-top: 6px;
   position: relative;
-  font-size: 14px;
+  font-size: 7px !important;
   width: 100%;
   text-overflow: ellipsis;
 }
@@ -95,7 +155,7 @@ a {
 input {
   padding: 9px 0px 7px 9px;
   font-size: 12px;
-  width: 16rem;
+  width: 17rem;
   height: 1.2rem;
   outline: none;
   background: #fafafa;
@@ -109,13 +169,13 @@ label {
   position: absolute;
   pointer-events: none;
   left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   transform: translateY(10px);
   line-height: 6px;
   transition: all ease-out 0.1s;
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
-  padding-top: 6px;
+  padding-top: 2px;
 }
 
 /* hiding placeholder in all browsers */
@@ -132,7 +192,7 @@ input::placeholder {
 /* label final position */
 input:not(:placeholder-shown) + label {
   transform: translateY(0);
-  font-size: 11px;
+  font-size: 10px;
 }
 
 /* input padding increases if placeholder is not shown */
@@ -142,9 +202,11 @@ input:not(:placeholder-shown) {
 }
 
 .login-button {
+  margin-top: 14px;
   text-align: center;
   width: 100%;
   padding: 0.5rem;
+  border-radius: 5px;
   border: 1px solid transparent;
   background-color: #3897f0;
   color: #fff;
@@ -198,4 +260,5 @@ input:not(:placeholder-shown) {
 .signup {
   color: #3897f0;
   font-weight: 600;
+  font-size: 14px;
 }
